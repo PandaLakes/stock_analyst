@@ -1,0 +1,231 @@
+/* Custom CSS for Streamlit App */
+
+/* General styling */
+body {
+    background-color: #f0f2f6;
+    color: #333333;
+}
+
+/* Centering tables and plots */
+.centered-table, .centered-plot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.large-table table, .centered-table table, .stDataFrame {
+    width: 100% !important; /* Make the tables take the full width */
+    margin: 0 auto;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-right: 2px solid #1f77b4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Sidebar image styling to make the logo rounded */
+[data-testid="stSidebar"] img {
+    display: inline-block;
+    margin-left: 75px;
+    margin-right: auto;
+    border-radius: 50%; /* Make the logo rounded */
+}
+
+/* Sidebar title styling */
+[data-testid="stSidebar"] h2 {
+    color: #333333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Sidebar component styling */
+[data-testid="stSidebar"] .css-1v3fvcr {
+    color: #333333;
+    font-size: 18px;
+}
+
+[data-testid="stSidebar"] .css-1n543e5 {
+    background-color: #ffffff;
+    border: 1px solid #1f77b4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #333333 !important;
+}
+
+[data-testid="stSidebar"] .css-1n543e5:hover {
+    background-color: #e8f0fe !important;
+    color: #333333 !important;
+}
+
+[data-testid="stSidebar"] .css-1n543e5:focus {
+    background-color: #d0e0fd !important;
+    color: #333333 !important;
+    outline: none;
+}
+
+/* Sidebar radio buttons */
+[data-testid="stSidebar"] .css-16huue1, [data-testid="stSidebar"] .css-1cpxqw2 {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    border: none !important;
+}
+
+[data-testid="stSidebar"] .css-1cpxqw2:hover {
+    background-color: #e8f0fe !important;
+    color: #333333 !important;
+}
+
+[data-testid="stSidebar"] .css-1cpxqw2:focus {
+    background-color: #d0e0fd !important;
+    color: #333333 !important;
+    outline: none !important;
+}
+
+/* Header styling */
+[data-testid="stMarkdownContainer"] h1 {
+    color: #2e3a4d;
+    font-size: 2.5rem;
+}
+
+[data-testid="stMarkdownContainer"] h2 {
+    color: #2e3a4d;
+    font-size: 2rem;
+}
+
+[data-testid="stMarkdownContainer"] h3 {
+    color: #2e3a4d;
+    font-size: 1.5rem;
+}
+
+/* Metric styling */
+[data-testid="stMetricValue"] {
+    font-size: 2rem;
+    color: #1f77b4;
+}
+
+/* DataFrame and Chart styling */
+[data-testid="stDataFrame"], [data-testid="stAltairChart"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    width: 100% !important; /* Make the tables and charts take the full width */
+    margin: 0 auto; /* Center the table and chart */
+}
+
+/* Plot styling */
+.plot-container>div {
+    box-shadow: 0 0 3px #1f1f87;
+    padding: 10px;
+    margin: 0 auto; /* Center the plot */
+    width: 100% !important; /* Make the plots take the full width */
+}
+
+/* Expander styling */
+div[data-testid="stExpander"] div[role="button"] p {
+    font-size: 1.3rem;
+    color: #2e3a4d;
+}
+
+/* Button styling */
+.stButton>button {
+    background-color: #1f77b4 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.stButton>button:hover {
+    background-color: #1056a0 !important;
+    color: white !important;
+}
+
+.stButton>button:focus {
+    background-color: #1056a0 !important;
+    color: white !important;
+    outline: none !important;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 100% !important; /* Make the cards take the full width */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Centered table and plot styling */
+.centered-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.centered-plot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-ticker {
+    overflow: hidden;
+    background-color: #f9f9f9; /* Fond blanc */
+    color: #798188; /* Écriture bleue */
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%; /* Pour prendre toute la largeur */
+    border-bottom: 2px #1c157d; /* Barre inférieure verte */
+    border-radius: 5px; /* Ajout d'un léger arrondi aux coins */
+}
+
+.news-ticker div {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 4000s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+
+.sidebar .sidebar-content {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Optionnel : pour ajuster la couleur du texte */
+}
